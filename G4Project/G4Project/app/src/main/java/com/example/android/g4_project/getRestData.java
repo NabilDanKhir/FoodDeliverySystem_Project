@@ -49,7 +49,7 @@ public class getRestData extends AppCompatActivity implements ActivityCompat.OnR
     private static final String KEY_LOCATION = "location";
 
     private static final String PLACES_API_BASE = " https://maps.googleapis.com/maps/api/place";
-    private static final String API_KEY = "AIzaSyDze-a-LGHzqCRUfjnFJr34SeDkZBXqYvU";
+    private static final String API_KEY = "YOUR_OWN_API_KEY";
     private static final String TYPE_DISTANCE = "/details";
     private static final String TYPE_SEARCH = "/nearbysearch";
     private static final String OUT_JSON = "/json?";
