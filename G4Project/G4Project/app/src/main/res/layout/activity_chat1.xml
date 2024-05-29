@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat1">
+
+
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_border"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </RelativeLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/questionScroll"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/chatScroll"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_border"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/questions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/cantFindButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/questionScroll"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins"
+        android:text="@string/help_desc"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/userquestion"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionScroll"
+        android:layout_alignLeft="@id/questionScroll"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/help_question"
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/questionScroll"
+        android:layout_alignRight="@id/questionScroll"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins"
+        android:text="Send"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:visibility="gone" />
+</RelativeLayout>

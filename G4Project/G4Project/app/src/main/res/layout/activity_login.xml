@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/gray">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/DineDecided"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:text="@string/logo_name"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/DineDecided"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:hint="@string/login_email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/enter_email"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_password"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="resetPassword"
+        android:text="Forgot Your Password?"
+        android:textColor="@color/orange" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-65dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:onClick="login"/>
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-29dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/login_sign_up"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/SignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/SignUp"
+        android:layout_alignBottom="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="-48dp"
+        android:layout_marginBottom="-29dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:onClick="signUp"
+        android:text="@string/login_register"
+        android:textColor="@color/orange"
+        android:textSize="11sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Resend Email"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+
+</RelativeLayout>

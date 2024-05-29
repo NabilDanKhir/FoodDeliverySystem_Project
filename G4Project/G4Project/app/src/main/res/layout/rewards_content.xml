@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/silver"
+        android:layout_width="345dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-211dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards_silver"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/silver_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="113dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/silver_desc"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/silver_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/silver_rewards_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/silver_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/silver_rewards_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/special_rewards"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/gold"
+        android:layout_width="345dp"
+        android:layout_height="177dp"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="-202dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards_gold"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gold_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-94dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/gold_desc"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/gold_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-128dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/gold_rewards_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-156dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/gold_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/gold_rewards_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-184dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/special_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diamond"
+        android:layout_width="345dp"
+        android:layout_height="215dp"
+        android:layout_alignBottom="@+id/platinum"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="-239dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards_platinum"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/diamond_desc"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-520dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/diamond_desc"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diamond_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-556dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diamond_rewards_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/diamond_rewards"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-26dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/diamond_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diamond_rewards_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/diamond_rewards_1"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/platinum_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diamond_rewards_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/diamond_rewards_2"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/special_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/platinum"
+        android:layout_width="345dp"
+        android:layout_height="190dp"
+        android:layout_alignBottom="@+id/gold"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="-210dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards_platinum"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/platinum_desc"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-314dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/platinum_desc"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/platinum_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-349dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/platinum_rewards_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-376dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/platinum_rewards"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/platinum_rewards_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/silver"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="-404dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/special_rewards"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

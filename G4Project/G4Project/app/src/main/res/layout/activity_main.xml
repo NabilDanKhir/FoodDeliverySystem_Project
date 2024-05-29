@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/Hello"
+            app:layout_constraintTop_toTopOf="@+id/Hello" />
+
+        <TextView
+            android:id="@+id/username2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Feeling hungry? Fret Not!"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Hello" />
+
+        <TextView
+            android:id="@+id/username3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover hidden gems in SS15 with us!"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username2" />
+
+        <ImageView
+            android:id="@+id/popular_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username3"
+            app:srcCompat="@drawable/hot_icon"
+            android:contentDescription="hotlogo" />
+
+        <TextView
+            android:id="@+id/hot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Restaurant"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/popular_icon"
+            app:layout_constraintTop_toTopOf="@+id/popular_icon" />
+
+        <TextView
+            android:id="@+id/recent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recently Visited"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hot_title" />
+
+        <TextView
+            android:id="@+id/fav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:text="Your Favorites"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hot_title" />
+
+        <TextView
+            android:id="@+id/recent_subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last visited: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recent_title" />
+
+        <TextView
+            android:id="@+id/recent_subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31/12/2001"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/recent_subtitle1"
+            app:layout_constraintTop_toBottomOf="@+id/recent_title" />
+
+        <TextView
+            android:id="@+id/invalid"
+            android:layout_width="156dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="25dp"
+            android:text="To be filled with pictures and address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recent_title" />
+
+        <TextView
+            android:id="@+id/invalid2"
+            android:layout_width="156dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="190dp"
+            android:text="To be filled with pictures and address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fav_title" />
+
+        <TextView
+            android:id="@+id/roulette_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="215dp"
+            android:text="Not Sure What To Eat?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recent_title" />
+
+        <TextView
+            android:id="@+id/recent_subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let Us Decided For You!"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roulette_title" />
+
+        <Button
+            android:id="@+id/button_roulette"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textAlignment="textStart"
+            android:text="@string/roulette_text"
+            android:drawableEnd="@drawable/spinning_wheel1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recent_subtitle3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/header_layout"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

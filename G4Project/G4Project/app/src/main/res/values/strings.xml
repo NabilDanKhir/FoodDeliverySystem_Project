@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Home</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="logo_name">DineDecided</string>
+    <string name="login">Login</string>
+    <string name="login_sign_up">Don\'t have an account?</string>
+    <string name="login_register">Register</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+
+
+    <!-- main menu -->
+    <string name="Welcome">Loading Restaurant Data. Please Wait!</string>
+    <string name="text_greetings">Hello, </string>
+    <string name="text_greetings_content1">Feeling hungry? Fret Not!</string>
+    <string name="text_greetings_content2">Discover hidden gems in SS15 with us!</string>
+    <string name="roulette_text">Food Roulette!!\n\nA Spin A Day, Keeps Your\nHeadache Away.\nNever Miss Out!!</string>
+
+    <!-- sign up -->
+    <string name="sign_up_app_name">SignUp</string>
+    <string name="sign_up_logo_name">DineDecided</string>
+    <string name="sign_up_username">Username</string>
+    <string name="sign_up_password">Password</string>
+    <string name="sign_up_name">Display Name</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="birth_date">dd</string>
+    <string name="birth_month">MM</string>
+    <string name="birth_year">YYYY</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_signup">Sign Up</string>
+    <string name="sign_up_logindesc">Already have an account?</string>
+    <string name="sign_up_login">Login</string>
+    <string name="salt">UpdO</string>
+    <!-- profile -->
+    <string name="profile_header">Profile</string>
+    <string name="profile_cancel">Cancel</string>
+    <string name="profile_save">Save</string>
+
+    <!-- rewards -->
+    <string name="rewards_header">Rewards</string>
+    <string name="rewards_silver">Silver Tier Rewards</string>
+    <string name="rewards_gold">Gold Tier Rewards</string>
+    <string name="rewards_platinum">Platinum Tier Rewards</string>
+    <string name="rewards_diamond">Diamond Tier Rewards</string>
+
+    <string name="silver_desc">Give 10 reviews and you will be in the silver tier!</string>
+    <string name="gold_desc">Give 30 reviews and you will be in the gold tier!</string>
+    <string name="platinum_desc">Give 50 reviews and you will be in the platinum tier!</string>
+    <string name="diamond_desc">Give 100 reviews and you will be in the diamond tier!</string>
+
+    <string name="rewards">Rewards:</string>
+    <string name="silver_rewards" tools:ignore="StringEscaping">•Two RM 10 vouchers.</string>
+    <string name="gold_rewards" tools:ignore="StringEscaping">•Two RM 30 vouchers.</string>
+    <string name="platinum_rewards" tools:ignore="StringEscaping">•Two RM 50 vouchers.</string>
+    <string name="diamond_rewards" tools:ignore="StringEscaping">•Five RM 50 vouchers.</string>
+
+    <string name="special_rewards" tools:ignore="StringEscaping">•Occasional special vouchers.</string>
+    <string name="special_platinum_rewards" tools:ignore="StringEscaping">•Occasional special vouchers for platinum users only!</string>
+
+    <!-- feedback -->
+    <string name="feedback_header">Feedback Form</string>
+    <string name="feedback_cancel">Cancel</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="feedback_hint">Tell us how you feel about the app!!</string>
+    <string name="feedback_popup">Thank you for rating our app!!</string>
+
+    <!--spinners -->
+    <string name="halal_tag">Halal/Non-Halal</string>
+    <string name="cuisine_tag">Cuisine</string>
+    <string name="distance_tag">Distance</string>
+    <string name="rating_tag">Rating</string>
+
+    <string-array name="halal_array">
+        <item>Halal</item>
+        <item>Non-Halal</item>
+    </string-array>
+
+    <string-array name="cuisine_array">
+        <item>Malay</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+        <item>American</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+    </string-array>
+
+    <string-array name="distance_array">
+        <item>Within 100 metres</item>
+        <item>Within 500 metres</item>
+        <item>Within 1 kilometre</item>
+        <item>Within 3 kilometres</item>
+    </string-array>
+
+    <string-array name="rating_array">
+        <item>4.5 stars and above</item>
+        <item>3.5 stars and above</item>
+        <item>3 stars and below</item>
+
+    </string-array>
+
+    <!--chat -->
+    <string name="chat_header">Contact Us</string>
+    <string name="help_desc">Can\'t find your questions? Type it out!</string>
+    <string name="welcome_msg">Please select a question from the buttons below or type one out if you can\'t find a suitable question.</string>
+    <string name="help_question">Type a message</string>
+    <string name="automated_message">Thank you for your question, we will add it as a new question in the future if it is relevant!</string>
+
+    <!-- settings -->
+    <string name="settings_header">Settings</string>
+    <string name="notifications_header">Notifications</string>
+    <string name="language_header">Language</string>
+    <string name="english">English</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <string name="expire_voucher_notif">Expiring Voucher Notifications</string>
+    <string name="expire_voucher_notif_desc">You will receive notifications that are almost expiring!</string>
+
+    <string name="promo_notif">Receive Promotion Notifications</string>
+    <string name="promo_notif_desc">You will receive notifications on promotions!</string>
+
+    <string name="voucher_notif">Voucher Notifications</string>
+    <string name="voucher_notif_desc">You will receive notifications when you can redeem a voucher!</string>
+
+    <string name="meal_notif">Meal-time Notifications</string>
+    <string name="meal_notif_desc">You will receive notifications one(1) hour before your meal time!</string>
+
+
+</resources>

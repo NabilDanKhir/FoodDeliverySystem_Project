@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.g4_project">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="DineDecided"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.G4Project"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+        <activity
+            android:name=".Maps"
+            android:exported="false" />
+        <activity
+            android:name=".restaurantInfo"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".getRestData"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".DisplayRestaurants"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Notifications"
+            android:exported="false"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Chat1"
+            android:exported="false"
+            android:label="Contact Us"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Feedback"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FoodRoulette"
+            android:exported="false"
+            android:label="FoodRoulette"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Reward"
+            android:exported="false"
+            android:label="Rewards"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:label="Profile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".navigation_drawer"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <receiver android:name=".MealTimeReceiver"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifications"
+    android:background="@color/gray">
+
+    <!-- Tool Bar -->
+
+    <TextView
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-42dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/notifications_header"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <CheckBox
+        android:id="@+id/expVouBox"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notif"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="-46dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/expire_voucher_notif" />
+
+    <CheckBox
+        android:id="@+id/promBox"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/expVouBox"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="-47dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/promo_notif" />
+
+    <CheckBox
+        android:id="@+id/voucBox"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/promBox"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="-48dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/voucher_notif" />
+
+
+    <CheckBox
+        android:id="@+id/mealTime"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/voucBox"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="-49dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/meal_notif" />
+
+    <TimePicker
+        android:id="@+id/mealTimePicker"
+        android:layout_width="283dp"
+        android:layout_height="85dp"
+        android:layout_alignRight="@id/meal"
+        android:layout_alignBottom="@id/mealTime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="-289dp"
+        android:layout_marginBottom="-87dp"
+        android:timePickerMode="spinner" />
+
+    <TextView
+        android:id="@+id/meal"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/mealTime"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginBottom="-76dp"
+        android:layout_weight="1"
+        android:text="Every Day Meal Time: " />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/mealTimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-75dp"
+        android:background="@color/divider_gray" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/divider1"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="-53dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/language_header"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/language"
+        android:layout_alignBottom="@+id/divider1"
+        android:layout_marginEnd="-275dp"
+        android:layout_marginBottom="-61dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/english"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/language"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-27dp"
+        android:background="@color/divider_gray" />
+
+    <TextView
+        android:id="@+id/dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/divider2"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="-47dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/dark_mode"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/dark_mode"
+        android:layout_alignBottom="@+id/divider2"
+        android:layout_marginStart="299dp"
+        android:layout_marginBottom="-64dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/meal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="-69dp"
+        android:text="Set Time" />
+
+</RelativeLayout>
